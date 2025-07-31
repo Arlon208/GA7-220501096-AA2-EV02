@@ -1,0 +1,10 @@
+persistencia\ClienteJpaController.class
+persistencia\ControladorPersistencia.class
+Servlets\SvInsetarCliente.class
+logica\Cliente.class
+persistencia\exceptions\NonexistentEntityException.class
+persistencia\exceptions\PreexistingEntityException.class
+Servlets\SvEliminar.class
+logica\Controlador.class
+persistencia\exceptions\IllegalOrphanException.class
+Servlets\SvEditar.class

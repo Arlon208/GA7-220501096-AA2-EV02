@@ -5,6 +5,7 @@ base de datos llamada "cliente.sql" a fin de importala y puedan ejecutar el prog
 <h3>Tecnologias Usadas</h3>
 <ul>
   <li>Java 8</li>
+  <li>HTML/CSS</li>
   <li>Servlets + JSP</li>
   <li>JDBC + SQL </li>
   <li>Apache Tomcat 9</li>

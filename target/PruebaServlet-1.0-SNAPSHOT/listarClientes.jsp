@@ -13,6 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listado de Clientes</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
     </head>
     <body>
         <h1>Listado de Clientes</h1>
@@ -23,13 +24,26 @@
             for(Cliente cliente : listaClientes){
         
         %>
-        
-        <p><b> Cliente N° <%=cont%> </b></p>
-        <p><b> Cedula N° <%=cliente.getIdCliente()%> </b></p>
-        <p><b> Nombre  <%=cliente.getNombre()%> </b></p>
-        <p><b> Ciudad  <%=cliente.getCiudad()%> </b></p>
-        <p>-----------------------</p>
+        <table>
+            <tr>
+                <th>Cliente N°</th>
+                <th>Cedula</th>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+            </tr>
+            <tbody>
+        <td><b><%=cont%> </b></td>
+        <td><b><%=cliente.getIdCliente()%> </b></td>
+        <td><b> <%=cliente.getNombre()%> </b></td>
+        <td><b> <%=cliente.getCiudad()%> </b></td>
+        <td><b> <%=cliente.getDireccion()%> </b></td>
+        <td><b> <%=cliente.getTelefono()%> </b></td>
+        </tbody>
+        </table>
         <% cont = cont + 1;%>
         <%}%>
+        
     </body>
 </html>

@@ -9,10 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Agregar Cliente</title>
+        <title>Modulo Cliente</title>
+         <link rel="stylesheet" type="text/css" href="estilos.css"/>
     </head>
     <body>
-        <h1>Datos del cliente</h1>
+        <h1>Modulo clientes</h1><hr>
+        <h2>Ingreso datos del cliente</h2>
         <form action="SvInsetarCliente" method="POST">
             <p><label>Cedula: </label> <input type="number" name="cc"></p>
             <p><label>Nombre: </label> <input type="text" name="nombre"></p>
@@ -22,20 +24,20 @@
             <button type="submit"> Enviar </button>
         </form>
         
-        <h1> lista de clientes </h1>
+        <h2> Consultar Listado de Clientes </h2><hr>
         <p>Hagacliente en el siguiente boton si desea ver los clientes almacenados</p>
         <form action="SvInsetarCliente" method="GET">
             <button type="submit"> Ver Clientes</button>
         </form>
         
-         <h1> Eliminar Cliente </h1>
+        <h2> Eliminar Cliente </h2><hr>
         <p>ingrese la cedula del usuario que desea eliminiar</p>
         <form action="SvEliminar" method="POST">
             <p><label>Cedula: </label> <input type="number" name="id_cliente">
             <button type="submit"> Eliminar Cliente</button>
         </form>
         
-         <h1> Editar Cliente </h1>
+        <h2> Editar Cliente </h2><hr>
         <p>ingrese la cedula del usuario que desea modificar</p>
         <form action="SvEditar" method="GET">
             <p><label>Cedula: </label> <input type="number" name="id_clienteEdit">
